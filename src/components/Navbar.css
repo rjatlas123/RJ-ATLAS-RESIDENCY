@@ -3,24 +3,24 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px; /* Reduced height */
-  background-color: black; /* Solid black */
-  backdrop-filter: blur(6px); /* Adds glass effect */
-  position: sticky;
+  padding: 8px 20px; /* Slightly smaller height */
+  background: rgba(0, 0, 0, 0.4); /* Transparent black */
+  backdrop-filter: blur(6px); /* Glass effect */
+  position: fixed;
   top: 0;
-  z-index: 1000;
-  position: fixed; /* Fixes the navbar at the top */
+  left: 0;
   width: 100%;
-
+  z-index: 1000;
 }
 
+/* Logo Section */
 .logo-container {
   display: flex;
   align-items: center;
 }
 
 .logo-img {
-  width: 100px;
+  width: 90px;
   height: auto;
   margin-right: 8px;
 }
@@ -32,6 +32,7 @@
   font-family: "Brush Script MT", cursive;
 }
 
+/* Navigation Links */
 .nav-links {
   display: flex;
   gap: 50px;
@@ -56,26 +57,27 @@
 /* Mobile Menu Icon */
 .menu-icon {
   display: none;
-  font-size: 24px;
+  font-size: 26px;
   color: white;
   cursor: pointer;
+  z-index: 1100;
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
   .nav-links {
-    position: relative;
+    position: fixed;
     top: 0;
     right: -100%;
-    height: 35vh;
+    height: 100vh;
     width: 200px;
     background: rgba(17, 17, 17, 0.7); /* Transparent background */
     backdrop-filter: blur(8px); /* Glass effect */
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 22px;
-    transition: right 0.3s ease;
+    gap: 25px;
+    transition: right 0.3s ease-in-out;
   }
 
   .nav-links.active {
@@ -84,5 +86,10 @@
 
   .menu-icon {
     display: block;
+  }
+
+  /* Make links larger for touch devices */
+  .nav-links a {
+    font-size: 18px;
   }
 }
