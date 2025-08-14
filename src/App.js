@@ -8,6 +8,7 @@ import Resident from './components/Resident';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Background from './components/Background'; // Assuming you have a Background component for the background effect
+import ChatBot from './components/ChatBot'; // Importing the ChatBot component
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <Resident />
       <Contact />
       <Footer />
+      <ChatBot />
     </Background>
   );
 }
