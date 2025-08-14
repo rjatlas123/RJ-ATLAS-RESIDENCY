@@ -1,0 +1,87 @@
+/* Navbar Base */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Reduced height */
+  background-color: black; /* Solid black */
+  backdrop-filter: blur(6px); /* Adds glass effect */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  position: fixed; /* Fixes the navbar at the top */
+
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 100px;
+  height: auto;
+  margin-right: 8px;
+}
+
+.logo-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: #e8b537;
+  font-family: "Brush Script MT", cursive;
+}
+
+.nav-links {
+  display: flex;
+  gap: 50px;
+  margin-right: 50px;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #e8b537;
+}
+
+/* Mobile Menu Icon */
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-links {
+    position: relative;
+    top: 0;
+    right: -100%;
+    height: 35vh;
+    width: 200px;
+    background: rgba(17, 17, 17, 0.7); /* Transparent background */
+    backdrop-filter: blur(8px); /* Glass effect */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    transition: right 0.3s ease;
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}

@@ -1,0 +1,65 @@
+.resident-section {
+  padding: 60px 20px;
+  background-color: #0a0a0a;
+  text-align: center;
+}
+
+.resident-heading {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.gold-text {
+  color: #d4af37;
+}
+
+.white-text {
+  color: #fff;
+}
+
+.resident-subheading {
+  color: #ccc;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.resident-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.resident-card {
+  background: #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.resident-card:hover {
+  transform: translateY(-5px);
+}
+
+.resident-card img {
+  width: 20%;
+  border-radius: 2000px;
+  margin-bottom: 15px;
+}
+
+.resident-description {
+  color: #ccc;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+}
+
+.star {
+  color: gold;
+  margin: 0 2px;
+}

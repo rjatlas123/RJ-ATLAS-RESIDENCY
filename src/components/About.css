@@ -1,0 +1,108 @@
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 50px 10%;
+  flex-wrap: wrap;
+  
+
+  /* Instead of a solid color, use RGBA for transparency */
+  background-color: rgb(46, 49, 37); /* 0.6 = 60% opaque */
+
+  /* Optional: add blur for glass effect */
+  backdrop-filter: blur(5px);
+}
+
+.about-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.gold-text {
+  color: #e8b537;
+  position: relative;
+  display: inline-block;
+}
+.white-text {
+  color: white;
+}
+
+
+.gold-text::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #e8b537;
+  transition: width 0.4s ease;
+}
+
+.gold-text:hover::after {
+  width: 100%;
+}
+
+.about-description {
+  font-size: 1.1rem;
+  color: wheat;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.about-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: wheat;
+}
+
+.feature-icon {
+  font-size: 1.5rem;
+  color: #e8b537;
+}
+
+.about-right {
+  flex: 1;
+  min-width: 300px;
+  position: relative;
+}
+
+.about-image {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade {
+  animation: fadeEffect 1s ease-in-out;
+}
+
+@keyframes fadeEffect {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+  }
+
+}
