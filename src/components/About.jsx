@@ -26,10 +26,13 @@ const About = () => {
 </h2>
 
         <p className="about-description">
-          Experience unmatched elegance and comfort in our premium apartments,
-          where luxury meets lifestyle.
+          RJ Atlas Residency stands as a testament to architectural brilliance and luxurious living. Nestled in the heart of the city, our residence offers a harmonious blend of contemporary design and timeless elegance.
+          <br />
+          <br />
+With meticulous attention to detail and uncompromising quality, we've created spaces that inspire and comfort. Each corner of RJ Atlas Residency tells a story of sophistication and thoughtful design.
         </p>
-
+        <br />
+        
         <div className="about-features">
           <div className="feature-item">
             <FaBuilding className="feature-icon" />

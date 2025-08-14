@@ -27,11 +27,11 @@ export default function Home() {
         </h1>
 
         <p className="hero__subtitle">
-          Experience elegant spaces, modern amenities, and timeless design.
+          Experience unparalleled comfort and sophistication at RJ Atlas Residency, where every detail is crafted for your exquisite lifestyle.
         </p>
 
         <div className="hero__cta">
-          <a href="#book-visit" className="btn btn--gold">Book Visit</a>
+          <a href="#contact" className="btn btn--gold">Book Visit</a>
           <a href="#virtual-tour" className="btn btn--ghost">Virtual Tour</a>
         </div>
       </div>

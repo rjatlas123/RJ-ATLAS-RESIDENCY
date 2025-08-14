@@ -72,6 +72,7 @@
 .hero__content {
   margin-top: 100px;
   width: 100%;
+  size: 100px;
 }
 
 /* ====== Typography ====== */
@@ -82,6 +83,7 @@
   letter-spacing: 0.4px;
   text-align: left;
   margin-left: 90px;
+  font-size: 100px;
 }
 
 .hero__title .gold-text {
